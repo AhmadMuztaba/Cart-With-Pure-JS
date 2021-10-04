@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.showcase{
+    display: flex;
+    padding: 1rem;
+    padding-bottom: 0;
+    background-color: rgb(236, 236, 238);
+    height: 100vh;
+}
+.products{
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cart{
+    flex: 4;
+}
+.input__search--field{
+    width: 98%;
+    height: 2rem;
+    border-radius: .4rem;
+    padding: 1%;
+    border: 1px solid rgb(165, 164, 164);
+    margin-bottom: 1rem;
+}
+.input__search--field:focus{
+    outline: none;
+}
+.products__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.products__each{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: .5rem;
+    cursor: pointer;
+}
+.products__each--image img{
+    height: 5rem;
+    width: 7rem;
+    object-fit: contain;
+}
+.product__footer{
+    border-top: 1px solid rgb(185, 185, 185);;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product__footer div{
+    display: flex;
+    flex-direction: row;
+}
+.product__footer button{
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.9rem;
+    width: 3.7rem;
+    padding: 1rem;
+    border: 1px solid rgb(197, 197, 197);
+}
+.cart{
+    overflow-y: scroll;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cart__head--AddCustomer{
+    margin: .5rem;
+    padding: 1rem;
+    display: flex;
+    border-bottom: 1px solid rgb(221, 220, 220);
+}
+.cart__head--row{
+    border-bottom: 1px solid rgb(221, 220, 220);
+    margin: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3rem;
+
+}
+.nothing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete{
+    cursor: pointer;
+    z-index: 100;
+}
+.cart__head--row-image{
+    position: relative;
+    display: flex;
+    border:1px solid rgb(194, 192, 192);
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 1%;
+}
+.cart__head--row-image-img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.cart__head--row-image-count{
+    color: white;
+    position: absolute;
+    top:-.35rem;
+    right: -.3rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 167, 133);
+}
+.cart__body{
+    display: flex;
+    flex-direction: column;
+}
+.discount,.total,.subtotal,.tax{
+    margin: .25rem;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.pay{
+    display: flex;
+    justify-content: space-between;
+    margin: .25rem;
+    color: white;
+    /* height: 1.3rem; */
+    padding: 5%;
+    background-color: rgb(17, 121, 207);
+    margin-bottom: .5rem;
+}
