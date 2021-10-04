@@ -125,6 +125,7 @@ if (selected.length == 0) {
     nothing.classList.add("nothing")
     nothing.appendChild(nothingText);
     cartHead.appendChild(nothing);
+    
 }
 
 
@@ -173,6 +174,11 @@ function generateCart(se) {
     let total = 0;
     let subtotal = 0;
     let payprice = 0;
+    if(se.length<=0){
+        subtotalprice.innerHTML = "BDT" + subtotal;
+        payTotalprice.innerHTML = "BDT" + payprice;
+        totalprice.innerHTML = "BDT" + total;
+    }
     se.forEach((s) => {
         total = total + s.price;
         subtotal = subtotal + s.price;
